@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | SMSD</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      display: flex;
+      flex-direction: row;
+      min-height: 100vh;
+      position: relative;
+      padding-bottom: 60px;
+      font-family: 'Lato', sans-serif;
+      background-color: #f8f8fa;
+      color: #2e2e2e;
+    }
+
+    .sidebar {
+      width: 220px;
+      background-color: #f0f4f9;
+      height: 100vh;
+      padding: 2rem 1rem;
+      box-shadow: 2px 0 6px rgba(0,0,0,0.05);
+    }
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+      color: #4b4b4b;
+      text-align: center;
+    }
+
+    nav a {
+      display: block;
+      margin: 1rem 0;
+      text-decoration: none;
+      color: #5a5a5a;
+      font-size: 1rem;
+      text-align: center;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #7c8cc4;
+    }
+
+    .container {
+      flex-grow: 1;
+      padding: 3rem;
+      background-color: #ffffff;
+      min-height: 100vh;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      margin-top: 0;
+      color: #4b4641;
+    }
+
+    p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: #3f3c39;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      margin-top: 1.5rem;
+    }
+
+    .caption {
+      font-size: 0.9rem;
+      color: #6b6b6b;
+      font-style: italic;
+      margin-top: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <div class="logo">SMSD</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="resume.html">Resume</a>
+      <a href="projects.html">Projects</a>
+      <a href="associations.html">Associations</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+
+  <div class="container">
+    <h2>Personal Philosophy</h2>
+    <p>“Love talked about is easy to ignore. Love in action is irresistible.”<br>
+    <span class="caption">— Robbye Jo Quinter</span></p>
+
+    <h2>Professional Philosophy</h2>
+    <p>I believe that accessible, well-organized information has the power to make a lasting impact. I enjoy working to preserve cultural and historical records with care, clarity, and respect, helping to keep them meaningful for the future. With a thoughtful approach grounded in precision, creativity, and kindness, I see each project as a chance to support others by making knowledge easier to find and appreciate.</p>
+
+    <img src="high-line-photo.jpg" alt="High Line New York City">
+    <p class="caption">Photo credit: Eric Allen Smith, October 22, 2016 — High Line, New York City.</p>
+  </div>
+
+  <footer style="position: absolute; bottom: 0; left: 0; right: 0; height: 60px; text-align: center; padding: 1rem; background-color: #f0f4f9; font-size: 0.9rem; color: #666;">
+    © 2025 Stephanie Desjardins. Love in Action.
+  </footer>
+</body>
+</html>
