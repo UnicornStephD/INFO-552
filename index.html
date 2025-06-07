@@ -2,114 +2,59 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home | SMSD</title>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      display: flex;
-      flex-direction: row;
-      min-height: 100vh;
-      position: relative;
-      padding-bottom: 60px;
-      font-family: 'Lato', sans-serif;
-      background-color: #f8f8fa;
-      color: #2e2e2e;
-    }
-
-    .sidebar {
-      width: 220px;
-      background-color: #f0f4f9;
-      height: 100vh;
-      padding: 2rem 1rem;
-      box-shadow: 2px 0 6px rgba(0,0,0,0.05);
-    }
-
-    .logo {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.8rem;
-      margin-bottom: 2rem;
-      color: #4b4b4b;
-      text-align: center;
-    }
-
-    nav a {
-      display: block;
-      margin: 1rem 0;
-      text-decoration: none;
-      color: #5a5a5a;
-      font-size: 1rem;
-      text-align: center;
-      transition: color 0.3s ease;
-    }
-
-    nav a:hover {
-      color: #7c8cc4;
-    }
-
-    .container {
-      flex-grow: 1;
-      padding: 3rem;
-      background-color: #ffffff;
-      min-height: 100vh;
-    }
-
-    h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.8rem;
-      margin-top: 0;
-      color: #4b4641;
-    }
-
-    p {
-      font-size: 1.05rem;
-      line-height: 1.7;
-      color: #3f3c39;
-    }
-
-    img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      margin-top: 1.5rem;
-    }
-
-    .caption {
-      font-size: 0.9rem;
-      color: #6b6b6b;
-      font-style: italic;
-      margin-top: 0.5rem;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>A Gentle Guide to Al-Anon</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="sidebar">
-    <div class="logo">SMSD</div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="resume.html">Resume</a>
-      <a href="projects.html">Projects</a>
-      <a href="associations.html">Associations</a>
-      <a href="contact.html">Contact</a>
+  <header>
+    <nav class="navbar">
+      <div class="logo">A Gentle Guide</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="what-is-alanon.html">What is Al-Anon?</a></li>
+        <li><a href="is-alanon-for-me.html">Is Al-Anon for Me?</a></li>
+        <li><a href="what-to-expect.html">What to Expect</a></li>
+        <li><a href="finding-a-meeting.html">Find a Meeting</a></li>
+        <li><a href="for-loved-ones.html">For Loved Ones</a></li>
+        <li><a href="understanding-the-program.html">Understanding the Program</a></li>
+        <li><a href="resources.html">Resources</a></li>
+      </ul>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
     </nav>
-  </div>
+  </header>
 
-  <div class="container">
-    <h2>Personal Philosophy</h2>
-    <p>“Love talked about is easy to ignore. Love in action is irresistible.”<br>
-    <span class="caption">— Robbye Jo Quinter</span></p>
+  <main>
+    <section class="hero">
+      <h1>Welcome to A Gentle Guide to Al-Anon</h1>
+      <p>A safe, beginner-friendly space for those seeking support — and those who want to understand it.</p>
+    </section>
 
-    <h2>Professional Philosophy</h2>
-    <p>I believe that accessible, well-organized information has the power to make a lasting impact. I enjoy working to preserve cultural and historical records with care, clarity, and respect, helping to keep them meaningful for the future. With a thoughtful approach grounded in precision, creativity, and kindness, I see each project as a chance to support others by making knowledge easier to find and appreciate.</p>
+    <section class="intro">
+      <h2>Start Here</h2>
+      <p>Whether you're considering Al-Anon for yourself or want to support someone who attends, this guide will help you take the first step with confidence and compassion.</p>
+      <a href="what-is-alanon.html" class="button">What is Al-Anon?</a>
+    </section>
 
-    <img src="high-line-photo.jpg" alt="High Line New York City">
-    <p class="caption">Photo credit: Eric Allen Smith, October 22, 2016 — High Line, New York City.</p>
-  </div>
+    <section class="audiences">
+      <div class="audience-card">
+        <h3>Considering Al-Anon?</h3>
+        <p>Find out if Al-Anon may be right for you and what to expect in your first meeting.</p>
+        <a href="is-alanon-for-me.html">Learn More</a>
+      </div>
+      <div class="audience-card">
+        <h3>Supporting a Loved One?</h3>
+        <p>Understand what your loved one is learning and how to support them without overstepping.</p>
+        <a href="for-loved-ones.html">Learn More</a>
+      </div>
+    </section>
+  </main>
 
-  <footer style="position: absolute; bottom: 0; left: 0; right: 0; height: 60px; text-align: center; padding: 1rem; background-color: #f0f4f9; font-size: 0.9rem; color: #666;">
-    © 2025 Stephanie Desjardins. Love in Action.
+  <footer>
+    <p>&copy; 2025 A Gentle Guide to Al-Anon</p>
+    <p><small>This website is independently created and is not affiliated with or endorsed by Al-Anon Family Groups.</small></p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
